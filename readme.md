@@ -30,6 +30,8 @@ git commit -m "git运用说明 更新"
 查看当前状态
 git status
 
+四、新添加的功能
+
 
 
 
