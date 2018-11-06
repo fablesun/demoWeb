@@ -38,7 +38,19 @@ git add ./
 六、新功能 一次性添加修改过的代码已经目录
 git commit --all -m "一次性添加"
 
+七、新功能 忽略文件
+在目录文件中新建，.gitignore文件，在文件中添加，需要忽略的文件
+/idea.txt
+/.gitignore
+/css 会忽略掉整个目录文件
 
+八、查看 添加的日志
+git log
 
+九、重新添加 第二个功能
+git log --oneline 简洁版
 
+十、版本返回
+git reset hard Head~0  1,2,3
 
+git reset hard Head~0  1,2,3
