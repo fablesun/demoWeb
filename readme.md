@@ -26,6 +26,10 @@ git add ./readme.md  可以用tap键自动补齐文件名
 如果退出不了 按下 esc键 输入引文版:号，输入q! 回车  强制退出
 git commit -m "git运用说明 更新"
 
+三、继续添加 新功能说明
+查看当前状态
+git status
+
 
 
 
