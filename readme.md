@@ -87,3 +87,13 @@ git merge dev
 git branch -d dev
 
 新功能完成了 5
+
+GitHub
+不是git 它是一个网站，提供了运行通过git上次代码的功能
+在网站中注册
+账号：fable
+密码 fablesun911**
+https://github.com/fablesun/testWeb.git 生成的上传链接地址
+
+上传到网站上的命令  上传的是本地的master分支
+git pust https://github.com/fablesun/testWeb.git
