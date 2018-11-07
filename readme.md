@@ -53,8 +53,6 @@ git log --oneline 简洁版
 十、版本返回  用索引并不准确
 git reset hard Head~0  1,2,3
 
-<<<<<<< HEAD
-=======
 十一、版本返回 版本号通过 git log --oneline
       git reflog 查看历史版本号
 
