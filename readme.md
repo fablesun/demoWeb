@@ -53,4 +53,3 @@ git log --oneline 简洁版
 十、版本返回
 git reset hard Head~0  1,2,3
 
-git reset hard Head~0  1,2,3
