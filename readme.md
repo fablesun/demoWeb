@@ -50,6 +50,38 @@ git log
 九、重新添加 第二个功能
 git log --oneline 简洁版
 
-十、版本返回
+十、版本返回  用索引并不准确
 git reset hard Head~0  1,2,3
 
+<<<<<<< HEAD
+=======
+十一、版本返回 版本号通过 git log --oneline
+      git reflog 查看历史版本号
+
+git reset hard 版本号
+
+十二、分支存储 用于存储没有写好的代码，利于运行
+1、假如现在代码只完成了一半，先创建分支  dev为分支名
+git branch dev
+
+查看分支
+命令：git branch
+
+切换分支
+git checkout dev
+
+假如 代码已经完成
+先添加完成的代码
+git add ./
+git commit -m "添加完成的代码 在dev中提交的"
+
+// 将dev中的代码合并到master中
+
+先切换到 master
+git checkout master
+
+// 合并
+git merge dev
+
+十三、删除分支 dev为要删除的分支名
+git branch -d dev
