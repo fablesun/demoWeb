@@ -73,5 +73,11 @@ git checkout dev
 git add ./
 git commit -m "添加完成的代码 在dev中提交的"
 
+// 将dev中的代码合并到master中
+
+先切换到 master
+git checkout master
+
+
 
 
