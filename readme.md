@@ -83,5 +83,7 @@ git checkout master
 // 合并
 git merge dev
 
-十三、删除分支 dev为要删除的分支名
+十三、删除分支 dev为要删除的分支名  删除当前分支必须，切换到当前分支，之外
 git branch -d dev
+
+新功能完成了 5
