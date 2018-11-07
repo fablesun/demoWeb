@@ -71,7 +71,7 @@ git checkout dev
 假如 代码已经完成
 先添加完成的代码
 git add ./
-git commit -m "添加完成的代码"
+git commit -m "添加完成的代码 在dev中提交的"
 
 
 
