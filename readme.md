@@ -93,6 +93,45 @@ GitHub
 密码 fablesun911**
 https://github.com/fablesun/testWeb.git 生成的上传链接地址
 
-上传到网站上的命令  上传的是本地的master分支
-git pust https://github.com/fablesun/testWeb.git
+上传到网站上的命令  上传的是本地的master分支   push 推
+git push https://github.com/fablesun/testWeb.git master
 
+运行 git log 时退不出去 按 q 退退出
+
+下载网站  pull 拉   拿到远程 master分支  比较常用
+先在本地初始化一个新的仓储
+git pull https://github.com/fablesun/testWeb.git master
+
+另一个办法 clone 克隆 会帮您先创建一个仓库名  第一次使用会用 clone
+git clone https://github.com/fablesun/testWeb.git
+多次执行 会覆盖本地内容
+
+## 流行框架
+## 1 ssh方式上传代码 可以通过不通过用户名密码上传
+公钥、私钥  两者之间是有关联的
+创建命令：rsa 命令方式
+ssh-keygen -t rsa -C "邮箱"
+在C盘中，用户，中的文件夹 找到 .ssh文件 用记事本打开公钥复制
+在 GitHub 网站中 点击 setting设置 在左侧 ssh中进行配置 生成密匙
+
+创建一个新的文件夹 在新的文件夹中运行 git
+我的ssh 地址
+git@github.com:fablesun/testWeb1.git
+命令
+git push git@github.com:fablesun/testWeb1.git master
+
+上传失败的处理办法
+这个原因可能是本地主机的key发生了变化，因此每次SSH链接都会有提示，只需要在交互下输入yes即可。
+当然如果长久的想解决问题，可以采用以下方法：
+1、使用ssh连接远程主机时加上“-o StrictHostKeyChecking=no”的选项，去掉对主机的验证检查。
+
+ssh  -o StrictHostKeyChecking=no  192.168.xxx.xxx
+注：192.168.xxx.xxx 为本地ip地址：windows ipconfig查看，linux ifconfig查看
+
+2、当然你也可以直接改配置文件信息，这样彻底去掉验证。
+
+修改/etc/ssh/ssh_config文件（或$HOME/.ssh/config）中的配置，添加如下两行配置：
+
+
+StrictHostKeyChecking no
+UserKnownHostsFile /dev/null
