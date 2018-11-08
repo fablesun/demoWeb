@@ -135,3 +135,8 @@ ssh  -o StrictHostKeyChecking=no  192.168.xxx.xxx
 
 StrictHostKeyChecking no
 UserKnownHostsFile /dev/null
+
+
+创建 全局用户名邮箱
+git config --global user.name "用户名"
+git config --global user.email "邮箱"
