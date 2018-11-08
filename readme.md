@@ -120,22 +120,6 @@ git@github.com:fablesun/testWeb1.git
 命令
 git push git@github.com:fablesun/testWeb1.git master
 
-上传失败的处理办法
-这个原因可能是本地主机的key发生了变化，因此每次SSH链接都会有提示，只需要在交互下输入yes即可。
-当然如果长久的想解决问题，可以采用以下方法：
-1、使用ssh连接远程主机时加上“-o StrictHostKeyChecking=no”的选项，去掉对主机的验证检查。
-
-ssh  -o StrictHostKeyChecking=no  192.168.xxx.xxx
-注：192.168.xxx.xxx 为本地ip地址：windows ipconfig查看，linux ifconfig查看
-
-2、当然你也可以直接改配置文件信息，这样彻底去掉验证。
-
-修改/etc/ssh/ssh_config文件（或$HOME/.ssh/config）中的配置，添加如下两行配置：
-
-
-StrictHostKeyChecking no
-UserKnownHostsFile /dev/null
-
 
 创建 全局用户名邮箱
 git config --global user.name "用户名"
