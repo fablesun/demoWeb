@@ -96,6 +96,3 @@ https://github.com/fablesun/testWeb.git 生成的上传链接地址
 上传到网站上的命令  上传的是本地的master分支
 git pust https://github.com/fablesun/testWeb.git
 
-从命令行推送现有存储库。
-git remote add origin https://github.com/fablesun/testWeb.git
-git push -u origin master
