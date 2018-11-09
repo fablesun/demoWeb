@@ -155,7 +155,8 @@ git pull origin master
 添加 -u 后 以后添加时可以简写
 git push origin -u master
 
-
+// 简写
+git push
 
 
 
