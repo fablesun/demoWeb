@@ -128,6 +128,7 @@ git config --global user.email "邮箱"
 
 ## 本地提交后
 先 pull 再 push
+当有冲突时，会弹出 冲突说明 按 esc 后输入 :wq退出
 
 
 地址简写方式 git@github.com:fablesun/demoWeb.git
