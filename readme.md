@@ -126,3 +126,6 @@ git@github.com:fablesun/demoWeb.git
 git config --global user.name "用户名"
 git config --global user.email "邮箱"
 
+## 本地提交后
+先 pull 再 push
+
