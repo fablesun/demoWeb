@@ -120,7 +120,9 @@ git@github.com:fablesun/testWeb1.git
 命令
 git push git@github.com:fablesun/testWeb1.git master
 
+git@github.com:fablesun/demoWeb.git
 
 创建 全局用户名邮箱
 git config --global user.name "用户名"
 git config --global user.email "邮箱"
+
