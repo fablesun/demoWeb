@@ -150,7 +150,12 @@ git remote add origin [地址名]
 添加时简写
 git push origin master
 
-没有修改如何冲突
+git pull origin master
+
+添加 -u 后 以后添加时可以简写
+git push origin -u master
+
+
 
 
 
